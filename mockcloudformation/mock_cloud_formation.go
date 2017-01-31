@@ -11,8 +11,7 @@ import (
 
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudformation "github.com/aws/aws-sdk-go/service/cloudformation"
-        "github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface"
-
+	"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface"
 )
 
 // CloudFormationAPIMock mock
