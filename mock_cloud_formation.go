@@ -11,13 +11,14 @@ import (
 
 	request "github.com/aws/aws-sdk-go/aws/request"
 	cloudformation "github.com/aws/aws-sdk-go/service/cloudformation"
-	"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface"
+        "github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface"
+
 )
 
 // CloudFormationAPIMock mock
 type CloudFormationAPIMock struct {
 	mock.Mock
-	cloudformationiface.CloudFormationAPI
+	cloudformationiface.CloudFormationAPI  // temp workaround for https://github.com/ernesto-jimenez/goautomock/issues/3#issuecomment-276240746
 }
 
 func NewCloudFormationAPIMock() *CloudFormationAPIMock {
